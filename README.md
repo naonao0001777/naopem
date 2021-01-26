@@ -1,5 +1,5 @@
 # ポートフォリオ
-技術アピをするためのサイトを作成
+
 
 # 参考サイト
 https://webdesigner-go.com/template/portfolio-02/  
