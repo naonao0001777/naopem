@@ -30,6 +30,7 @@ img {
 ul,
 li {
   list-style: none;
+  display: inline;
 }
 
 .pc-only {
@@ -303,6 +304,7 @@ li {
 ---------------------------------*/
 .skill-section .inner {
   max-width: 1000px;
+  text-align: center;
 }
 
 .skill-list {
@@ -313,11 +315,14 @@ li {
 }
 
 .skill-item {
-  display: flex;
   flex: 0 0 46%;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 50px;
+}
+.skill-image-wrapper img{
+  width: 100px;
+  height: 100px;
 }
 
 .skill-image-wrapper {
