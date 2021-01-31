@@ -113,6 +113,7 @@ li {
   align-items: center;
   justify-content: center;
   height: 86vh;
+  background-image: url(../img/Feature/earth.jpg);
 }
 
 .logo {
@@ -273,6 +274,10 @@ li {
 ---------------------------------*/
 .about-section .inner {
   max-width: 1000px;
+}
+.heading-primary img{
+  height: 35px;
+  width: 35px;
 }
 
 .about-item {
