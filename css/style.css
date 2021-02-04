@@ -125,13 +125,13 @@ li {
 
 .logo-title {
   font-family: "Open sans", sans-serif;
-  font-size: 64px;
+  font-size: 100px;
   line-height: 1;
   letter-spacing: .2em;
 }
 
 .logo-subtitle {
-  font-size: 20px;
+  font-size: 40px;
   margin-top: 5px;
   text-align: center;
   letter-spacing: .2em;
@@ -501,12 +501,12 @@ li {
   }
 
   .logo-title {
-    font-size: 28px;
+    font-size: 50px;
     letter-spacing: .16em;
   }
 
   .logo-subtitle {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   /* グローバルナビ */
