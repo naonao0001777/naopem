@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "SoukouMincho";
+  src: url(../font/SoukouMincho.ttf);
+}
+
 body {
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+  font-family: "SoukouMincho","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
   "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
   "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 15px;
@@ -62,7 +67,7 @@ li {
  文字
 ---------------------------------*/
 .heading-primary {
-  font-family: "Open sans", sans-serif;
+  font-family: "SoukouMincho","Open sans", sans-serif;
   font-size: 40px;
   font-weight: normal;
   line-height: 1;
@@ -109,12 +114,14 @@ li {
 ヘッダー
 ---------------------------------*/
 .header {
+  text-align: left;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 86vh;
-  background-image: url(../img/Feature/earth.jpg);
-}
+  /* background-image: url(../img/Feature/earth.jpg); */
+  background-color: black;
+} 
 
 .logo {
   position: relative;
@@ -124,19 +131,45 @@ li {
 }
 
 .logo-title {
-  font-family: "Open sans", sans-serif;
+  text-align: left;
+  color:#fff;
+  font-family: "SoukouMincho","Open sans", sans-serif;
   font-size: 100px;
   line-height: 1;
   letter-spacing: .2em;
 }
-
+.logo-title-sub{
+  text-align: left;
+  color:crimson;
+  font-family: "SoukouMincho","Open sans", sans-serif;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: .2em;
+}
+.log-title-iti{
+  text-align: left;
+  color:crimson;
+  font-family: "SoukouMincho","Open sans", sans-serif;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: .2em;
+}
 .logo-subtitle {
+  text-align: left;
+  color:#fff;
   font-size: 40px;
   margin-top: 5px;
   text-align: center;
   letter-spacing: .2em;
 }
-
+.logo-subtitle-sub {
+  text-align: left;
+  color:crimson;
+  font-size: 40px;
+  margin-top: 5px;
+  text-align: center;
+  letter-spacing: .2em;
+}
 /*--------------------------------
  グローバルナビ
 ---------------------------------*/
@@ -159,7 +192,7 @@ li {
 }
 
 .gnav-item {
-  font-family: "Open sans", sans-serif;
+  font-family: "SoukouMincho","Open sans", sans-serif;
   font-size: 16px;
   padding: 0 24px;
   letter-spacing: .05em;
