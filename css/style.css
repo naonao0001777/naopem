@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "SoukouMincho","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
   "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
   "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 15px;
@@ -67,7 +67,7 @@ li {
  文字
 ---------------------------------*/
 .heading-primary {
-  font-family: "SoukouMincho","Open sans", sans-serif;
+  font-family: "Open sans", sans-serif;
   font-size: 40px;
   font-weight: normal;
   line-height: 1;
@@ -192,7 +192,7 @@ li {
 }
 
 .gnav-item {
-  font-family: "SoukouMincho","Open sans", sans-serif;
+  font-family: "Open sans", sans-serif;
   font-size: 16px;
   padding: 0 24px;
   letter-spacing: .05em;
