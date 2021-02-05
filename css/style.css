@@ -6,7 +6,10 @@
 
 @font-face {
   font-family: "SoukouMincho";
+  /* font-family: "SoukouMincho"; */
   src: url(../font/SoukouMincho.ttf);
+  /* src: url(../font/SourceHanSerif-Regular.otf); */
+  /* src: url(../font/Togalite-Heavy.otf); */
 }
 
 body {
@@ -121,7 +124,7 @@ li {
   height: 86vh;
   /* background-image: url(../img/Feature/earth.jpg); */
   background-color: black;
-} 
+}
 
 .logo {
   position: relative;
@@ -140,13 +143,21 @@ li {
 }
 .logo-title-sub{
   text-align: left;
-  color:crimson;
+  color:#fff;
   font-family: "SoukouMincho","Open sans", sans-serif;
   font-size: 100px;
   line-height: 1;
   letter-spacing: .2em;
 }
 .log-title-iti{
+  text-align: left;
+  color:crimson;
+  font-family: "SoukouMincho","Open sans", sans-serif;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: .2em;
+}
+.logo-title-to{
   text-align: left;
   color:crimson;
   font-family: "SoukouMincho","Open sans", sans-serif;
@@ -351,7 +362,10 @@ li {
   justify-content: space-between;
   margin-bottom: -50px;
 }
-
+.skill-image{
+  float:inline-start;
+  box-sizing: border-box;
+}
 .skill-item {
   flex: 0 0 46%;
   flex-wrap: wrap;
@@ -359,8 +373,8 @@ li {
   margin-bottom: 50px;
 }
 .skill-image-wrapper img{
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .skill-image-wrapper {
