@@ -77,10 +77,26 @@ li {
   margin-bottom: 15px;
   letter-spacing: .05em;
 }
-
+.bold-text {
+  font-weight: bold;
+}
 .section-heading {
   margin-bottom: 20px;
   text-align: center;
+}
+
+.description-header {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.discription-headding {
+  font-family: "Open sans", sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 15px;
+  letter-spacing: .05em;
 }
 
 .section-lead {
@@ -393,6 +409,11 @@ li {
 .skill-title {
   margin-bottom: 3px;
 }
+.skill-discription{
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .rate {
   position: relative;
@@ -526,6 +547,9 @@ li {
   }
 
   .heading-primary {
+    font-size: 22px;
+  }
+  .discription-headding {
     font-size: 22px;
   }
 
