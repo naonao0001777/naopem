@@ -1,5 +1,5 @@
 # naonao0001777ポートフォリオ
-[![portfolio](https://user-images.githubusercontent.com/46675984/125157772-c5d83100-e1a7-11eb-8511-8f13d1325233.png)](https://naonao0001777.github.io/)
+[![portfolio_1](https://user-images.githubusercontent.com/46675984/125264013-737d4880-e33e-11eb-8fe3-b17a8c5b4296.png)](https://naonao0001777.github.io/)
 
 # 参考サイト
 https://webdesigner-go.com/template/portfolio-02/  
