@@ -66,6 +66,27 @@ li {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .12);
 }
 
+.caption {
+  position:absolute;
+  left:0;
+  top:0;
+  display:none;
+  color:#fff;
+  padding:10px;
+  width:130px;
+  height:130px;
+  text-align:center;
+}
+
+.skill-content {
+  position:relative;
+  background:#ddd;
+  margin:20px auto;
+  width:150px;
+  height:150px;
+  overflow:hidden;
+}
+
 /*--------------------------------
  文字
 ---------------------------------*/
@@ -146,8 +167,7 @@ display: list-item;
   padding-top: 40px;
 }
 .parallax-bg{
-
-  background-image:url('../img/feature/hacker.jpg');
+  background-image:url('../img/feature/IMG_20210707_055641.jpg');
   background-attachment: fixed;
 }
 .logo {
@@ -343,9 +363,14 @@ display: list-item;
 .about-section .inner {
   max-width: 1000px;
 }
+
 .heading-primary img{
   height: 35px;
   width: 35px;
+}
+
+.about-name{
+text-align: center;
 }
 
 .about-item {
@@ -362,6 +387,9 @@ display: list-item;
 .about-image {
   border-radius: 50%;
   box-shadow: 0 0 25px 0 #d9d9d9;
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .about-body {
