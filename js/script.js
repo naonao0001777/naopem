@@ -46,13 +46,14 @@ $(function () {
     return false;
   });
 
-  $('.skill-content').hover(function () {
-    $('.caption', this).animate({
-      top: "75px"
-    }, 500);
-  }, function () {
-    $('.caption', this).animate({
-      top: "150px"
-    }, 500);
-  });
+  // // マウスオーバーでかっこよくしようとしたよ
+  // $('.skill-content').hover(function () {
+  //   $('.caption', this).animate({
+  //     top: "75px"
+  //   }, 500);
+  // }, function () {
+  //   $('.caption', this).animate({
+  //     top: "150px"
+  //   }, 500);
+  // });
 });

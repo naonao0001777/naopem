@@ -306,6 +306,43 @@ display: list-item;
   width: fit-content;
 }
 
+/* .works-url-link{
+  background-color: #00bcd4;
+  color: whitesmoke;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+} */
+/* 
+.works-url-link :hover{
+  background-color: #00bcd4;
+  color: whitesmoke;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+} */
+
+.works-url-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #668ad8;
+  width: 50px;
+  height: 50px;
+  /* line-height: 120px; */
+  border-radius: 50%;
+  border: solid 2px #668ad8;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  transition: .4s;
+}
+
+.works-url-link:hover {
+  background: #b3e1ff;
+}
+
 .works-item:nth-of-type(3n) {
   margin-right: 0;
 }
@@ -416,17 +453,49 @@ text-align: center;
   justify-content: space-between;
   margin-bottom: -50px;
 }
-.skill-image{
-  float:inline-start;
-  box-sizing: border-box;
-}
-.skill-item {
+
+/* .skill-item {
   flex: 0 0 46%;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 50px;
+} */
+
+/* .skill-image{
+  float:inline-start;
+  box-sizing: border-box;
+} */
+
+.skill-item-image {
+  overflow: hidden;
+  transition: 1.0s;
+  transform: rotateY(0deg );
 }
-.skill-image-wrapper img{
+
+.skill-item-image img{
+  transition: 1.0s;
+}
+
+.skill-item-image :hover {
+    transition: 1.0s;
+    transform: scale(1.5,1.5);
+}
+
+.skill-image-ul{
+  width: auto;
+}
+
+.skill-image-li{
+display: list-item;
+margin-right: auto;
+}
+
+.skill-discription{
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+.skill-image-wrapper img {
   width: 80px;
   height: 80px;
 }
@@ -446,11 +515,6 @@ text-align: center;
 
 .skill-title {
   margin-bottom: 3px;
-}
-.skill-discription{
-  text-align: left;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .rate {
@@ -517,6 +581,15 @@ text-align: center;
   width: 50px;
   margin: 0 20px;
   text-align: center;
+}
+
+.contact-item img {
+    width: 350px;
+    transition: 1.0s;
+    transform: rotateY(0deg );
+}
+.contact-item:hover img {
+    transform: rotateY( 180deg );
 }
 
 .contact-text {
@@ -679,6 +752,19 @@ text-align: center;
     width: 100px;
     max-width: 100%;
     margin: 0 auto 20px;
+  }
+
+  .about-image-layout {
+    width:fit-content;
+  }
+
+  .about-image-layout img {
+    transition: 1.0s;
+    transform: rotateY(0deg);
+  }
+  .about-image-layout :hover img {
+    transition: 1.0s;
+    transform: rotateY(100deg);
   }
 
   /* Skill */
