@@ -433,10 +433,49 @@ text-align: center;
 
 .about-body {
   flex: 1;
+  display: block;
+  /* border-radius: 5px; */
+  /* background-color:#ddd; */
+  border: solid 1px #d9d9d9;
+  padding: 10px;
+  /* box-shadow: 0 0 10px rgb(0 0 0 / 20%); */
+  /* margin-right: 10px; */
+  /* margin-bottom: 10px; */
+}
+
+.about-profile-wrapper{
+  padding: 10px;
+}
+
+.about-profile {
+  display: block;
+  border-radius: 5px;
+  background-color:#ddd;
+  border: solid 1px #1d1d1d;
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .about-body p:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.carrer-contet-wrapper{
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.career-content{
+  display: block;
+  border-radius: 5px;
+  background-color:#ddd;
+  border: solid 1px #1d1d1d;
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 /*--------------------------------
@@ -490,9 +529,33 @@ display: list-item;
 margin-right: auto;
 }
 
+.skill-description-wrapper{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .skill-discription{
   flex-wrap: wrap;
   font-weight: bold;
+  display: block;
+  border-radius: 5px;
+  background-color:#ddd;
+  border: solid 1px #1d1d1d;
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: fit-content;
+  height: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.skill-image-div{
+text-align: left;
+display: flex;
+padding: 1px;
 }
 
 .skill-image-wrapper img {
@@ -755,21 +818,30 @@ margin-right: auto;
   }
 
   .about-image-layout {
+    margin: 30px;
+    padding: 20px;
+    display: block;
     width:fit-content;
   }
 
-  .about-image-layout img {
+  /* .about-image-layout img {
     transition: 1.0s;
     transform: rotateY(0deg);
   }
+
   .about-image-layout :hover img {
     transition: 1.0s;
     transform: rotateY(100deg);
+  } */
+
+  .about-image-content{
+    height: 700px;
+    display: block;
+    border: solid 2px #1d1d1d;
   }
-  .mypage-to-work{
+
+  .border-test{
     border: 2px solid #000000;
-    width: 300px;
-    height: 100px;
   }
 
   /* Skill */
