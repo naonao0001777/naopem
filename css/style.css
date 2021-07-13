@@ -7,8 +7,8 @@
 @font-face {
   font-family: "SoukouMincho";
   /* font-family: "SoukouMincho"; */
-  src: url(../font/SoukouMincho.ttf);
-  /* src: url(../font/SourceHanSerif-Regular.otf); */
+  /* src: url(../font/SoukouMincho.ttf); */
+  src: url(../font/SourceHanSerif-Regular.otf);
   /* src: url(../font/Togalite-Heavy.otf); */
 }
 
@@ -25,7 +25,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #1ca9e3;
+  /* color: #1ca9e3; */
 }
 
 img {
@@ -175,11 +175,12 @@ display: list-item;
   margin-bottom: 30px;
   padding: 0 20px;
   text-align: center;
+  background-color: rgba(255, 0, 0, 0.25);
 }
 
 .logo-title {
   text-align: left;
-  color:#fff;
+  color:#bc8f8f;
   font-family: "SoukouMincho","Open sans", sans-serif;
   font-size: 150px;
   line-height: 1;
@@ -238,6 +239,7 @@ display: list-item;
   -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
   -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
   box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
+  opacity: 0.9;
 }
 
 .gnav-list {
@@ -420,7 +422,8 @@ text-align: center;
 
 .about-image-wrapper {
   flex: 0 0 220px;
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-left: auto;
 }
 
 .about-image {
@@ -431,10 +434,23 @@ text-align: center;
   margin-left: auto;
 }
 
+.about-image-layout{
+ display: block; 
+}
+
+.about-image-content{
+  display: block;
+  border: solid 1px #ddd;
+  height: 390px;
+  width: 240px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .about-body {
   flex: 1;
   display: block;
-  /* border-radius: 5px; */
+  border-radius: 5px;
   /* background-color:#ddd; */
   border: solid 1px #d9d9d9;
   padding: 10px;
@@ -476,6 +492,24 @@ text-align: center;
   box-shadow: 0 0 10px rgb(0 0 0 / 20%);
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.about-name-nao{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.about-detail-wrapper{
+  display: block;
+}
+
+.about-detail-layout{
+  display: block;
+  margin-left: 30px;
+}
+
+.about-detail{
+  float: left;
 }
 
 /*--------------------------------
@@ -537,7 +571,7 @@ margin-right: auto;
 
 .skill-discription{
   flex-wrap: wrap;
-  font-weight: bold;
+  /* font-weight: bold; */
   display: block;
   border-radius: 5px;
   background-color:#ddd;
@@ -556,6 +590,10 @@ margin-right: auto;
 text-align: left;
 display: flex;
 padding: 1px;
+}
+
+.skill-stack-software{
+  font-weight: bold ;
 }
 
 .skill-image-wrapper img {
@@ -684,8 +722,45 @@ padding: 1px;
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #ccc;
+  background-color: #3f98ef;
+  transition: 4s;
 }
+.page-top-icon{
+  height: 50px;
+  width: 50px;
+}
+/* .page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #3f98ef;
+  opacity: 0.6;
+}
+.page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+.page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+} */
 
 /*media Queries 767
 ----------------------------------------------------*/
@@ -807,9 +882,9 @@ padding: 1px;
   }
 
   /* About */
-  .about-item {
+  /* .about-item {
     display: block;
-  }
+  } */
 
   .about-image-wrapper {
     width: 100px;
@@ -820,7 +895,6 @@ padding: 1px;
   .about-image-layout {
     margin: 30px;
     padding: 20px;
-    display: block;
     width:fit-content;
   }
 
@@ -834,15 +908,9 @@ padding: 1px;
     transform: rotateY(100deg);
   } */
 
-  .about-image-content{
+  /* .about-image-content{
     height: 700px;
-    display: block;
-    border: solid 2px #1d1d1d;
-  }
-
-  .border-test{
-    border: 2px solid #000000;
-  }
+  } */
 
   /* Skill */
   .skill-list {
