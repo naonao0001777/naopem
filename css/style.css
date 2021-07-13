@@ -766,6 +766,11 @@ margin-right: auto;
     transition: 1.0s;
     transform: rotateY(100deg);
   }
+  .mypage-to-work{
+    border: 2px solid #000000;
+    width: 300px;
+    height: 100px;
+  }
 
   /* Skill */
   .skill-list {
