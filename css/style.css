@@ -139,7 +139,7 @@ display: list-item;
  レイアウト
 ---------------------------------*/
 .wrapper {
-  padding-top: 68px;
+  /* padding-top: 68px; */
 }
 
 .section {
@@ -160,19 +160,23 @@ display: list-item;
 ヘッダー
 ---------------------------------*/
 .header {
-  text-align: left;
+  /* text-align: center; */
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 86vh;
+  height: 90vh;
   /* background-image: url(https://i.imgur.com/GCJRhiA.png); */
   /* background-color: black; */
   padding-top: 40px;
 }
+
 .parallax-bg{
   background-image:url('../img/feature/IMG_20210707_055641.jpg');
   background-attachment: fixed;
+  height: 100%;
+  width: 100%;
 }
+
 .logo {
   position: relative;
   margin-bottom: 30px;
@@ -201,6 +205,10 @@ display: list-item;
   text-shadow: 4px 5px 6px #808080;
 }
 
+.logo-gnav-container{
+  display: flex;
+}
+
 /*--------------------------------
  グローバルナビ
 ---------------------------------*/
@@ -225,9 +233,13 @@ display: list-item;
 
 .gnav-item {
   font-family: "Open sans", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   padding: 0 24px;
   letter-spacing: .05em;
+}
+
+.gnav-item :hover{
+  color:aqua;
 }
 
 .gnav-link {
@@ -793,7 +805,7 @@ padding: 1px;
 
   /* ヘッダー */
   .header {
-    height: 70vh;
+    height: 90vh;
   }
 
   .logo-title {
