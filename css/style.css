@@ -693,7 +693,7 @@ padding: 1px;
 }
 
 .footer .inner {
-  padding: 30px;
+  padding: 10px;
 }
 
 .copyright {
@@ -702,7 +702,7 @@ padding: 1px;
   color: #8c8c8c;
 }
 
-.page-top {
+/* .page-top {
   font-size: 12px;
   font-weight: bold;
   display: block;
@@ -716,7 +716,36 @@ padding: 1px;
 .page-top-icon{
   height: 50px;
   width: 50px;
+} */
+
+.page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 15px;
+  padding: 10px;
+  margin: 4px;
+  /* background:#b3e1ff; */
+  color: #1d1d1d;
+  font-weight: bold;
 }
+
+.page-top a {
+  background: #b3e1ff;
+  text-decoration: none;
+  color: #b3e1ff;
+  width: 100px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+
+.page-top a:hover {
+  text-decoration: none;
+  background: #b3e1ff;
+}
+
 /* .page_top{
   width: 50px;
   height: 50px;
@@ -959,6 +988,6 @@ padding: 1px;
 
   /* フッター */
   .footer .inner {
-    padding: 20px 0;
+    padding: 10px 0;
   }
 }
