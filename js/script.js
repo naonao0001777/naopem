@@ -60,7 +60,7 @@ $(function () {
         } else {
             if (showFlag) {
                 showFlag = false;
-                topBtn.stop().animate({'bottom' : '-100px'}, 200); 
+                topBtn.stop().animate({'bottom' : '-100px'}, 800); 
             }
         }
       });
