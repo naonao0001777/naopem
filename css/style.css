@@ -295,6 +295,7 @@ display: list-item;
   margin-bottom: 40px;
   height: fit-content;
   width: fit-content;
+  align-items: center;
 }
 
 /* .works-url-link{
@@ -360,6 +361,25 @@ display: list-item;
   font-size: 10px;
   display: block;
   text-align: center;
+}
+
+.works-image-wrapper{
+  display: block;
+  align-items: center;
+  align-content: center;
+  max-width: fit-content;
+}
+.works-image{
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.works-link{
+  object-fit: cover;
+  display: block;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .works-image.fadein {
