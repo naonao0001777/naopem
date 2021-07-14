@@ -346,14 +346,20 @@ display: list-item;
   font-size: 12px;
   font-weight: bold;
   margin-top: 8px;
+  display: block;
+  text-align: center;
 }
 
 .works-text {
   font-size: 10px;
+  display: block;
+  text-align: center;
 }
 
 .works-url {
   font-size: 10px;
+  display: block;
+  text-align: center;
 }
 
 .works-image.fadein {
@@ -734,8 +740,6 @@ padding: 1px;
   /* background:#b3e1ff; */
   color: #1d1d1d;
   font-weight: bold;
-  width: 10%;
-  height: 10%;
 }
 
 .page-top a {
@@ -752,6 +756,9 @@ padding: 1px;
 .page-top a:hover {
   text-decoration: none;
   background: #b3e1ff;
+}
+
+.page-top-capital{
 }
 
 /* .page_top{
