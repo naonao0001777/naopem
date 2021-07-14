@@ -139,7 +139,7 @@ display: list-item;
  レイアウト
 ---------------------------------*/
 .wrapper {
-  /* padding-top: 68px; */
+  padding-top: 0;
 }
 
 .section {
@@ -171,10 +171,12 @@ display: list-item;
 }
 
 .parallax-bg{
-  background-image:url('../img/feature/IMG_20210707_055641.jpg');
+  background: url('../img/feature/IMG_20210707_055641.jpg') no-repeat center center;
   background-attachment: fixed;
+  background-size: cover;
   height: 100%;
   width: 100%;
+  justify-content: center;
 }
 
 .logo {
@@ -732,6 +734,8 @@ padding: 1px;
   /* background:#b3e1ff; */
   color: #1d1d1d;
   font-weight: bold;
+  width: 10%;
+  height: 10%;
 }
 
 .page-top a {
@@ -785,7 +789,7 @@ padding: 1px;
 
 /*media Queries 767
 ----------------------------------------------------*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   body {
     font-size: 13px;
     line-height: 1.7;
@@ -825,7 +829,7 @@ padding: 1px;
 
   /* レイアウト */
   .wrapper {
-    padding-top: 82px;
+    padding-top: 0;
   }
 
   .section {
@@ -838,11 +842,20 @@ padding: 1px;
 
   /* ヘッダー */
   .header {
-    height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  }
+
+  .parallax-bg {
+    justify-content: center;
+    height: 100%;
+    width: 100%;
   }
 
   .logo-title {
-    font-size: 50px;
+    font-size: 70px;
     letter-spacing: .16em;
   }
 
@@ -919,6 +932,9 @@ padding: 1px;
     width:fit-content;
   }
 
+  .about-body{
+    min-width:fit-content;
+  }
   /* .about-image-layout img {
     transition: 1.0s;
     transform: rotateY(0deg);
@@ -994,4 +1010,7 @@ padding: 1px;
   /* .footer .inner {
     padding: 10px 0;
   } */
+  .page-top-capital{
+    display: none;
+  }
 }
