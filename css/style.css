@@ -298,24 +298,6 @@ display: list-item;
   align-items: center;
 }
 
-/* .works-url-link{
-  background-color: #00bcd4;
-  color: whitesmoke;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  font-weight: bold;
-} */
-/* 
-.works-url-link :hover{
-  background-color: #00bcd4;
-  color: whitesmoke;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  font-weight: bold;
-} */
-
 .works-url-link {
   display: inline-block;
   text-decoration: none;
@@ -370,7 +352,7 @@ display: list-item;
   max-width: fit-content;
 }
 .works-image{
-  object-fit: cover;
+  /* object-fit: cover; */
   max-height: 400px;
 }
 
