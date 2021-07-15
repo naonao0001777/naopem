@@ -2,7 +2,7 @@
 // initPhotoSwipeFromDOM(".js-my-gallery");
 
 $(function () {
-
+  
   //iOS対策
   //iOSでは疑似要素を含むaタグのリンクは２回タップしないと遷移とページ内スクロールをしないため、
   //ユーザーエージェント判定でiOSの場合はbodyタグにiosを付与し、対象の疑似要素をdisplay: noneする
