@@ -66,7 +66,7 @@ $(function () {
     }
   });
   // 途中のところで更新をしても表示
-  $(window).on("load",function () {
+  $(window).on("load", function () {
     if ($(this).scrollTop() > 300) {
       if (showFlag == false) {
         showFlag = true;
@@ -76,11 +76,11 @@ $(function () {
   });
 
   // // スクロール途中から表示したいメニューバーを指定
-  // var navBox = $(".gnav");
+  // var navBox = $(".about-image-wrapper");
   // // メニューバーは初期状態では消しておく
   // navBox.hide();
   // // 表示を開始するスクロール量を設定(px)
-  // var TargetPos = 350;
+  // var TargetPos = 300;
   // // スクロールされた際に実行
   // $(window).scroll(function () {
   //   // 現在のスクロール位置を取得
@@ -98,13 +98,18 @@ $(function () {
 
   // 画面ロード時フェードインする
   $(window).on("load", function () {
-    // ナビゲーションバー
-    $(".gnav").fadeIn(500);
-
-    // タイトルロゴ
     setTimeout(function () {
+      // ナビゲーションバー
+      $('.gnav').fadeIn(400);
+    }, 600);
+  });
+
+  $(window).on("load", function () {
+    $("body").fadeIn(600);
+    setTimeout(function () {
+      // タイトルロゴ
       $(".logo").fadeIn(1300);
-    }, 500);
+    }, 1000);
   });
 
   // // マウスオーバーでかっこよくしようとしたよ

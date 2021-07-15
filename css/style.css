@@ -13,6 +13,7 @@
 }
 
 body {
+  display: none;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
   "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
   "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -427,6 +428,7 @@ text-align: center;
 }
 
 .about-image {
+  /* display: none; */
   border-radius: 50%;
   box-shadow: 0 0 25px 0 #d9d9d9;
   display:block;
