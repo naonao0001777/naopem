@@ -222,10 +222,12 @@ display: list-item;
   left: 0;
   z-index: 100;
   width: 100%;
-  background-color:rgba(0, 0, 0, 0.5);
+  /* background-color:rgba(255, 0, 0,0.7); */
+  background: crimson;
   -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
   -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
   box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
+  opacity: 0.8;
 }
 
 .gnav-list {
@@ -251,7 +253,7 @@ display: list-item;
   padding: 20px 0;
   -webkit-transition: .3s;
   transition: .3s;
-  color: #fff;
+  color: #333;
 }
 
 .gnav-link:hover {
