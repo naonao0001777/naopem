@@ -13,7 +13,6 @@
 }
 
 body {
-  display: none;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
   "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
   "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -140,7 +139,9 @@ display: list-item;
  レイアウト
 ---------------------------------*/
 .wrapper {
+  display: none;
   padding-top: 0;
+  align-items: center;
 }
 
 .section {
@@ -437,7 +438,7 @@ text-align: center;
 }
 
 .about-image-layout{
- display: block; 
+ display: block;
 }
 
 .about-image-content{
@@ -768,7 +769,29 @@ padding: 1px;
   background: #b3e1ff;
 }
 
-.page-top-capital{
+.loader-wrap {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  z-index: 1;
+}
+
+.loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
 }
 
 /* .page_top{

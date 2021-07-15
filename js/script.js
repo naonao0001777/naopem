@@ -2,7 +2,7 @@
 // initPhotoSwipeFromDOM(".js-my-gallery");
 
 $(function () {
-  
+
   //iOS対策
   //iOSでは疑似要素を含むaタグのリンクは２回タップしないと遷移とページ内スクロールをしないため、
   //ユーザーエージェント判定でiOSの場合はbodyタグにiosを付与し、対象の疑似要素をdisplay: noneする
@@ -96,18 +96,28 @@ $(function () {
   //   }
   // });
 
+    // // ページ読み込み中はロードしていることが分かるようロードを表示する
+    // $(window).on('load',function(){
+    //   var h = $(window).height();
+    //   $('.wrapper').css('display','none');
+    //   $('.loader-wrap ,.loader').height(h).css('display','block');
+  
+    //   $('.loader-wrap').deley(900).fadeOut(800);
+    //   $('.loader').delay(600).fadeOut(300);
+    //   $('.wrapper').css('display', 'block');
+    // });
+
   // 画面ロード時フェードインする
   $(window).on("load", function () {
+    // bodyを表示
+    $(".wrapper").fadeIn(600);
+    // ナビゲーションバー
     setTimeout(function () {
-      // ナビゲーションバー
       $('.gnav').fadeIn(400);
     }, 600);
-  });
 
-  $(window).on("load", function () {
-    $("body").fadeIn(600);
+    // タイトルロゴ
     setTimeout(function () {
-      // タイトルロゴ
       $(".logo").fadeIn(1300);
     }, 1000);
   });
