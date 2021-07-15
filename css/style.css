@@ -180,6 +180,7 @@ display: list-item;
 }
 
 .logo {
+  display: none;
   position: relative;
   margin-bottom: 30px;
   padding: 0 20px;
@@ -215,16 +216,16 @@ display: list-item;
  グローバルナビ
 ---------------------------------*/
 .gnav {
+  display:none;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   width: 100%;
-  background-color:crimson;
+  background-color:rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
   -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
   box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
-  opacity: 0.9;
 }
 
 .gnav-list {
@@ -250,7 +251,7 @@ display: list-item;
   padding: 20px 0;
   -webkit-transition: .3s;
   transition: .3s;
-  color: #333;
+  color: #fff;
 }
 
 .gnav-link:hover {
