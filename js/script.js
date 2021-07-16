@@ -108,7 +108,8 @@ $(function () {
     // ローディングをフェードアウト
     $(".loader-wrap").fadeOut(600);
     $(".loader").fadeOut(600);
-    // bodyを表示
+
+    // wrapper
     $(".wrapper").fadeIn(600);
 
     // ナビゲーションバー
@@ -133,3 +134,15 @@ $(function () {
   //   }, 500);
   // });
 });
+
+// 10秒たったら強制的にロードをします
+$(function () {
+  setTimeout("stopload()", 10000);
+});
+
+function stopload() {
+  $(".wrapper").css("display", "block");
+  // ローディングをフェードアウト
+  $(".loader-wrap").fadeOut(600);
+  $(".loader").fadeOut(600);
+};
