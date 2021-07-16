@@ -5,7 +5,6 @@ $(function () {
   // 画面を読み込む際はローディングを出す
   $(".loader-wrap").css("display", "block");
   $(".loader").css("display", "block");
-  $(".wrapper").css("display", "none");
 
   //iOS対策
   //iOSでは疑似要素を含むaタグのリンクは２回タップしないと遷移とページ内スクロールをしないため、
@@ -144,6 +143,8 @@ $(function () {
 function stopload() {
   // wrapperを表示
   $(".wrapper").css("display", "block");
+  $(".logo").css("display", "block");
+  $(".gnav").css("display", "block");
   // ローディングをフェードアウト
   $(".loader-wrap").fadeOut(600);
   $(".loader").fadeOut(600);

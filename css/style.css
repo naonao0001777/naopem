@@ -139,7 +139,7 @@ display: list-item;
  レイアウト
 ---------------------------------*/
 .wrapper {
-  display:block;
+  display:none;
   padding-top: 0;
   align-items: center;
 }
