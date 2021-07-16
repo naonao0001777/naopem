@@ -483,22 +483,6 @@ text-align: center;
   margin-bottom: 20px;
 }
 
-.carrer-contet-wrapper{
-  padding: 10px;
-  padding-bottom: 20px;
-}
-
-.career-content{
-  display: block;
-  border-radius: 5px;
-  background-color:#ddd;
-  border: solid 1px #1d1d1d;
-  padding: 10px;
-  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
 .about-name-nao{
   font-size: 1rem;
   font-weight: bold;
@@ -514,10 +498,6 @@ text-align: center;
   text-align: left;
   margin-left: auto;
   margin-right:20px;
-}
-
-.about-detail{
-  /* float: left; */
 }
 
 /*--------------------------------

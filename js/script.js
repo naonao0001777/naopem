@@ -2,6 +2,9 @@
 // initPhotoSwipeFromDOM(".js-my-gallery");
 
 $(function () {
+  // 画面を読み込む際はローディングを出す
+  $(".loader-wrap").css("display", "block");
+  $(".loader").css("display", "block");
 
   //iOS対策
   //iOSでは疑似要素を含むaタグのリンクは２回タップしないと遷移とページ内スクロールをしないため、
@@ -76,41 +79,38 @@ $(function () {
   });
 
   // // スクロール途中から表示したいメニューバーを指定
-  // var navBox = $(".about-image-wrapper");
+  // var aboutimagelayout = $(".about-image-layout");
+  // var aboutname = $(".about-name");
+  // var aboutprofilewrapper = $(".about-profile-wrapper");
   // // メニューバーは初期状態では消しておく
-  // navBox.hide();
+  // aboutimagelayout.hide();
+  // aboutname.hide();
+  // aboutprofilewrapper.hide();
+  // // worksSection.hide();
+  // // contactSection.hide();
   // // 表示を開始するスクロール量を設定(px)
-  // var TargetPos = 300;
+  // var TargetPos = 400;
   // // スクロールされた際に実行
-  // $(window).scroll(function () {
+  // $(window).scroll(function () {z
   //   // 現在のスクロール位置を取得
   //   var ScrollPos = $(window).scrollTop();
   //   // 現在のスクロール位置と、目的のスクロール位置を比較
   //   if (ScrollPos > TargetPos) {
   //     // 表示(フェイドイン)
-  //     navBox.fadeIn();
-  //   }
-  //   else {
-  //     // 非表示(フェイドアウト)
-  //     navBox.fadeOut();
+  //     aboutimagelayout.fadeIn(1000);
+  //     aboutname.fadeIn(1000);
+  //     aboutprofilewrapper.fadeIn(1000);
   //   }
   // });
 
-    // // ページ読み込み中はロードしていることが分かるようロードを表示する
-    // $(window).on('load',function(){
-    //   var h = $(window).height();
-    //   $('.wrapper').css('display','none');
-    //   $('.loader-wrap ,.loader').height(h).css('display','block');
-  
-    //   $('.loader-wrap').deley(900).fadeOut(800);
-    //   $('.loader').delay(600).fadeOut(300);
-    //   $('.wrapper').css('display', 'block');
-    // });
-
   // 画面ロード時フェードインする
   $(window).on("load", function () {
+    // ローディングをフェードアウト
+    $(".loader-wrap").fadeOut(600);
+    $(".loader").fadeOut(600);
     // bodyを表示
     $(".wrapper").fadeIn(600);
+
     // ナビゲーションバー
     setTimeout(function () {
       $('.gnav').fadeIn(400);
@@ -118,7 +118,7 @@ $(function () {
 
     // タイトルロゴ
     setTimeout(function () {
-      $(".logo").fadeIn(1300);
+      $(".logo").fadeIn(1600);
     }, 1000);
   });
 
