@@ -57,7 +57,7 @@ $(function () {
   //スクロールが100に達したらボタン表示
   $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
-      if (showFlag == false) {
+      if (!showFlag) {
         showFlag = true;
         topBtn.stop().animate({ 'bottom': '20px' }, 200);
         gnavbar.animate({
