@@ -52,22 +52,29 @@ $(function () {
   // ページトップの表示
   var showFlag = false;
   var topBtn = $('#js-page-top');
+  var gnavbar = $('.gnav');
   topBtn.css('bottom', '-100px');
-  var showFlag = false;
   //スクロールが100に達したらボタン表示
   $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
       if (showFlag == false) {
         showFlag = true;
         topBtn.stop().animate({ 'bottom': '20px' }, 200);
+        gnavbar.animate({
+          'background-color': 'rgba(255, 0, 0, 0.7)'
+        }, 400);
       }
     } else {
       if (showFlag) {
         showFlag = false;
         topBtn.stop().animate({ 'bottom': '-100px' }, 550);
+        gnavbar.animate({
+          'background-color': 'rgba(255, 0, 0, 0.0)'
+        }, 400);
       }
     }
   });
+
   // 途中のところで更新をしても表示
   $(window).on("load", function () {
     if ($(this).scrollTop() > 300) {
@@ -78,50 +85,35 @@ $(function () {
     }
   });
 
-  // // スクロール途中から表示したいメニューバーを指定
-  // var aboutimagelayout = $(".about-image-layout");
-  // var aboutname = $(".about-name");
-  // var aboutprofilewrapper = $(".about-profile-wrapper");
-  // // メニューバーは初期状態では消しておく
-  // aboutimagelayout.hide();
-  // aboutname.hide();
-  // aboutprofilewrapper.hide();
-  // // worksSection.hide();
-  // // contactSection.hide();
-  // // 表示を開始するスクロール量を設定(px)
-  // var TargetPos = 400;
-  // // スクロールされた際に実行
-  // $(window).scroll(function () {z
-  //   // 現在のスクロール位置を取得
-  //   var ScrollPos = $(window).scrollTop();
-  //   // 現在のスクロール位置と、目的のスクロール位置を比較
-  //   if (ScrollPos > TargetPos) {
-  //     // 表示(フェイドイン)
-  //     aboutimagelayout.fadeIn(1000);
-  //     aboutname.fadeIn(1000);
-  //     aboutprofilewrapper.fadeIn(1000);
-  //   }
-  // });
-
   // 画面ロード時フェードインする
   $(window).on("load", function () {
     // ローディングをフェードアウト
     $(".loader-wrap").fadeOut(600);
     $(".loader").fadeOut(600);
 
-    // wrapper
+    // 本体
     $(".wrapper").fadeIn(600);
-
-    // ナビゲーションバー
-    setTimeout(function () {
-      $('.gnav').fadeIn(400);
-    }, 600);
 
     // タイトルロゴ
     setTimeout(function () {
-      $(".logo").fadeIn(1600);
-    }, 1000);
+      $(".logo").fadeIn(1500);
+    }, 700);
   });
+
+  // 10秒たったら強制的にロードをします
+  $(function () {
+    setTimeout("stopload()", 8000);
+  });
+
+  function stopload() {
+    // 本体を表示
+    $(".wrapper").css("display", "block");
+    // タイトルを表示
+    $(".logo").css("display", "block");
+    // ローディングをフェードアウト
+    $(".loader-wrap").fadeOut(600);
+    $(".loader").fadeOut(600);
+  };
 
   // // マウスオーバーでかっこよくしようとしたよ
   // $('.skill-content').hover(function () {
@@ -134,18 +126,3 @@ $(function () {
   //   }, 500);
   // });
 });
-
-// 10秒たったら強制的にロードをします
-$(function () {
-  setTimeout("stopload()", 10000);
-});
-
-function stopload() {
-  // wrapperを表示
-  $(".wrapper").css("display", "block");
-  $(".logo").css("display", "block");
-  $(".gnav").css("display", "block");
-  // ローディングをフェードアウト
-  $(".loader-wrap").fadeOut(600);
-  $(".loader").fadeOut(600);
-};
