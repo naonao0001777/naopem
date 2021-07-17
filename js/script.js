@@ -85,36 +85,6 @@ $(function () {
     }
   });
 
-  // 画面ロード時フェードインする
-  $(window).on("load", function () {
-    // ローディングをフェードアウト
-    $(".loader-wrap").fadeOut(600);
-    $(".loader").fadeOut(600);
-
-    // 本体
-    $(".wrapper").fadeIn(600);
-
-    // タイトルロゴ
-    setTimeout(function () {
-      $(".logo").fadeIn(1500);
-    }, 700);
-  });
-
-  // 10秒たったら強制的にロードをします
-  $(function () {
-    setTimeout("stopload()", 8000);
-  });
-
-  function stopload() {
-    // 本体を表示
-    $(".wrapper").css("display", "block");
-    // タイトルを表示
-    $(".logo").css("display", "block");
-    // ローディングをフェードアウト
-    $(".loader-wrap").fadeOut(600);
-    $(".loader").fadeOut(600);
-  };
-
   // // マウスオーバーでかっこよくしようとしたよ
   // $('.skill-content').hover(function () {
   //   $('.caption', this).animate({
@@ -125,4 +95,31 @@ $(function () {
   //     top: "150px"
   //   }, 500);
   // });
+
+  // 画面ロード時フェードインする
+  $(window).on("load", function () {
+    // ローディングをフェードアウト
+    $(".loader-wrap").fadeOut(600);
+    $(".loader").fadeOut(600);
+    // 本体
+    $(".wrapper").fadeIn(600);
+    // タイトルロゴ
+    setTimeout(function () {
+      $(".logo").fadeIn(1500);
+    }, 700);
+  });
+});
+
+// 5秒たったら強制的にロードをします
+$(function () {
+  setTimeout(function () {
+    // 本体を表示
+    $(".wrapper").css("display", "block");
+    // タイトルを表示
+    $(".logo").css("display", "block");
+    // ローディングをフェードアウト
+    $(".loader-wrap").fadeOut(600);
+    $(".loader").fadeOut(600);
+  }
+    , 5000);
 });
