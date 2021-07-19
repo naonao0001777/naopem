@@ -60,7 +60,7 @@ $(function () {
       if (!showFlag) {
         showFlag = true;
         topBtn.stop().animate({ 'bottom': '20px' }, 200);
-        gnavbar.animate({
+        gnavbar.stop().animate({
           'background-color': 'rgba(255, 0, 0, 0.7)'
         }, 250);
       }
@@ -68,7 +68,7 @@ $(function () {
       if (showFlag) {
         showFlag = false;
         topBtn.stop().animate({ 'bottom': '-100px' }, 550);
-        gnavbar.animate({
+        gnavbar.stop().animate({
           'background-color': 'rgba(255, 0, 0, 0.0)'
         }, 250);
       }
