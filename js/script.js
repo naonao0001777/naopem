@@ -53,10 +53,11 @@ $(function () {
   var showFlag = false;
   var topBtn = $('#js-page-top');
   var gnavbar = $('.gnav');
+  var datedisplay = $('#datetime');
   topBtn.css('bottom', '-100px');
   //スクロールが100に達したらボタン表示
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
+    if ($(window).scrollTop() > 300) {
       if (!showFlag) {
         showFlag = true;
         topBtn.stop().animate({ 'bottom': '20px' }, 200);
@@ -77,13 +78,39 @@ $(function () {
 
   // 途中のところで更新をしても表示
   $(window).on("load", function () {
-    if ($(this).scrollTop() > 300) {
+    if ($(window).scrollTop() > 300) {
       if (showFlag == false) {
         showFlag = true;
         topBtn.stop().animate({ 'bottom': '20px' }, 200);
       }
     }
   });
+
+  // ウィンドウがリサイズされたときの時計表示
+  var displaywidth = $(window).width();
+  $(window).resize(function () {
+    displaywidth = $(window).width();
+    if (displaywidth < 900) {
+      datedisplay.css("display", "none");
+    }
+    else {
+      if ($(window).scrollTop() < 850) {
+        datedisplay.css("display", "inline-block");
+      }
+    }
+  });
+
+  // 時計のスクロール表示
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 850) {
+      datedisplay.css("display", "none");
+    } else{
+      if(displaywidth > 900){
+        datedisplay.css("display", "inline-block");
+      }
+    }
+  });
+
 
   // // マウスオーバーでかっこよくしようとしたよ
   // $('.skill-content').hover(function () {
@@ -124,10 +151,10 @@ $(function () {
     , 5000);
 });
 
-function showtime(){
+function showtime() {
   var today = new Date();
-  $weekday = ['日','月','火','水','木','金','土'];
-  var month = today.getMonth() + 1 ;
-  $('#datetime').html(month + "月"+ today.getDate() + "日(" + $weekday[today.getDay()] +") " +today.getHours() + ":" + ('0'+today.getMinutes()).slice(-2) + ":" + ('0' +today.getSeconds()).slice(-2));
+  $weekday = ['日', '月', '火', '水', '木', '金', '土'];
+  var month = today.getMonth() + 1;
+  $('#datetime').html(month + "月" + today.getDate() + "日(" + $weekday[today.getDay()] + ") " + today.getHours() + ":" + ('0' + today.getMinutes()).slice(-2) + ":" + ('0' + today.getSeconds()).slice(-2));
 }
-setInterval(showtime,1000);
+setInterval(showtime, 1000);

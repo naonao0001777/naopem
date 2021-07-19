@@ -202,13 +202,14 @@ display: list-item;
 #datetime{
   display: inline-block;
   position: fixed;
-  top: 100px;
-  right: 200px;
+  top: 10%;
+  right: 10%;
   transform:
-  rotateY(10deg)
+  rotateY(20deg)
   rotate(9deg);
   font-weight: bold;
   color: #f7f7f7;
+  font-size: 20px;
 }
 
 .logo {
@@ -904,6 +905,10 @@ padding: 1px;
     justify-content: center;
     height: 100%;
     width: 100%;
+  }
+
+  #datetime{
+    display: none;
   }
 
   .logo-title {
