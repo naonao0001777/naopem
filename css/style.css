@@ -199,6 +199,18 @@ display: list-item;
   left: 0;
 }
 
+#datetime{
+  display: inline-block;
+  position: fixed;
+  top: 100px;
+  right: 200px;
+  transform:
+  rotateY(10deg)
+  rotate(9deg);
+  font-weight: bold;
+  color: #f7f7f7;
+}
+
 .logo {
   display: none;
   position: absolute;
