@@ -163,13 +163,14 @@ display: list-item;
 ---------------------------------*/
 .header {
   /* text-align: center; */
+  position:relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   /* background-image: url(https://i.imgur.com/GCJRhiA.png); */
   /* background-color: black; */
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 
 .parallax-bg{
@@ -181,15 +182,15 @@ display: list-item;
   justify-content: center;
 }
 
-.mask-blackmesh ::after{
+.mask-blackmesh{
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.15);
-  background-image: linear-gradient(90deg,rgba(0,0,0,.15) 50%,transparent 50%),linear-gradient(rgba(0,0,0,.15) 50%,transparent 50%);
-  background-size: 2px 2px;
+  background-color: rgba(0,0,0,.1);
+  background-image: linear-gradient(90deg,rgba(0,0,0,.1) 50%,transparent 50%),linear-gradient(rgba(0,0,0,.1) 50%,transparent 50%);
+  background-size: 3px 3px;
 }
 
-.mask ::after{
+.mask{
   content: "";
   position:absolute;
   top: 0;
@@ -200,11 +201,14 @@ display: list-item;
 
 .logo {
   display: none;
-  position: relative;
-  margin-bottom: 30px;
+  position: absolute;
+  margin-bottom: auto;
+  margin-top: auto;
   padding: 0 20px;
   text-align: center;
   background-color: rgba(255, 0, 0, 0.25);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .logo-title {
