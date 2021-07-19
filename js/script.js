@@ -53,7 +53,6 @@ $(function () {
   var showFlag = false;
   var topBtn = $('#js-page-top');
   var gnavbar = $('.gnav');
-  var datedisplay = $('#datetime');
   topBtn.css('bottom', '-100px');
   //スクロールが100に達したらボタン表示
   $(window).scroll(function () {
@@ -87,6 +86,7 @@ $(function () {
   });
 
   // ウィンドウがリサイズされたときの時計表示
+  var datedisplay = $('#datetime');
   var displaywidth = $(window).width();
   $(window).resize(function () {
     displaywidth = $(window).width();
@@ -110,7 +110,6 @@ $(function () {
       }
     }
   });
-
 
   // // マウスオーバーでかっこよくしようとしたよ
   // $('.skill-content').hover(function () {
