@@ -62,7 +62,7 @@ $(function () {
         topBtn.stop().animate({ 'bottom': '20px' }, 200);
         gnavbar.animate({
           'background-color': 'rgba(255, 0, 0, 0.7)'
-        }, 400);
+        }, 250);
       }
     } else {
       if (showFlag) {
@@ -70,7 +70,7 @@ $(function () {
         topBtn.stop().animate({ 'bottom': '-100px' }, 550);
         gnavbar.animate({
           'background-color': 'rgba(255, 0, 0, 0.0)'
-        }, 400);
+        }, 250);
       }
     }
   });
