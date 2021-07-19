@@ -202,8 +202,8 @@ display: list-item;
 #datetime{
   display: inline-block;
   position: fixed;
-  top: 10%;
-  right: 10%;
+  top: 12%;
+  right: 7%;
   transform:
   rotateY(20deg)
   rotate(9deg);
