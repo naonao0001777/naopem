@@ -564,17 +564,17 @@ text-align: center;
 
 .skill-item-image {
   overflow: hidden;
-  transition: 1.0s;
+  transition: 0.5s;
   transform: rotateY(0deg );
 }
 
 .skill-item-image img{
-  transition: 1.0s;
+  transition: 0.5s;
 }
 
 .skill-item-image :hover {
-    transition: 1.0s;
-    transform: scale(1.5,1.5);
+    transition: 0.5s;
+    transform: scale(1.3,1.3);
 }
 
 .skill-image-ul{
