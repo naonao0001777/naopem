@@ -740,22 +740,6 @@ padding: 1px;
   color: #8c8c8c;
 }
 
-/* .page-top {
-  font-size: 12px;
-  font-weight: bold;
-  display: block;
-  padding: 10px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #3f98ef;
-  transition: 4s;
-  color: #1d1d1d;
-}
-.page-top-icon{
-  height: 50px;
-  width: 50px;
-} */
-
 .page-top {
   position: fixed;
   bottom: 20px;
@@ -763,7 +747,6 @@ padding: 1px;
   font-size: 15px;
   padding: 10px;
   margin: 4px;
-  /* background:#b3e1ff; */
   color: #1d1d1d;
   font-weight: bold;
 }
@@ -807,6 +790,29 @@ padding: 1px;
   text-align: center;
   color: #fff;
   z-index: 2;
+}
+
+.fadeUp{
+  animation-name:fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+.fadeUpTrigger{
+  opacity: 0;
 }
 
 /* .page_top{

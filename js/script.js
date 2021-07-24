@@ -20,6 +20,8 @@ $(function () {
     e.stopPropagation();
   });
 
+  //#region スクロール
+
   //ページ内スクロール
   var $nav = $(".gnav");
   var navHeight = $nav.outerHeight();
@@ -57,28 +59,31 @@ $(function () {
   //スクロールが100に達したらボタン表示
   $(window).scroll(function () {
     if ($(window).scrollTop() > 300) {
-      if (!showFlag) {
+      if(!showFlag){
         showFlag = true;
         topBtn.stop().animate({ 'bottom': '20px' }, 200);
         gnavbar.stop().animate({
           'background-color': 'rgba(255, 0, 0, 0.7)'
         }, 250);
+  
       }
     } else {
-      if (showFlag) {
+      if(showFlag){
         showFlag = false;
         topBtn.stop().animate({ 'bottom': '-100px' }, 550);
         gnavbar.stop().animate({
           'background-color': 'rgba(255, 0, 0, 0.0)'
         }, 250);
       }
+
     }
+    scrollFadeAnime();
   });
 
   // 途中のところで更新をしても表示
   $(window).on("load", function () {
     if ($(window).scrollTop() > 300) {
-      if (showFlag == false) {
+      if(!showFlag){
         showFlag = true;
         topBtn.stop().animate({ 'bottom': '20px' }, 200);
       }
@@ -104,23 +109,13 @@ $(function () {
   $(window).scroll(function () {
     if ($(window).scrollTop() > 850) {
       datedisplay.css("display", "none");
-    } else{
-      if(displaywidth > 900){
+    } else {
+      if (displaywidth > 900) {
         datedisplay.css("display", "inline-block");
       }
     }
   });
-
-  // // マウスオーバーでかっこよくしようとしたよ
-  // $('.skill-content').hover(function () {
-  //   $('.caption', this).animate({
-  //     top: "75px"
-  //   }, 500);
-  // }, function () {
-  //   $('.caption', this).animate({
-  //     top: "150px"
-  //   }, 500);
-  // });
+  //#endregion
 
   // 画面ロード時フェードインする
   $(window).on("load", function () {
@@ -150,6 +145,7 @@ $(function () {
     , 5000);
 });
 
+// 時計
 function showtime() {
   var today = new Date();
   $weekday = ['日', '月', '火', '水', '木', '金', '土'];
@@ -157,3 +153,19 @@ function showtime() {
   $('#datetime').html(month + "月" + today.getDate() + "日(" + $weekday[today.getDay()] + ") " + today.getHours() + ":" + ('0' + today.getMinutes()).slice(-2) + ":" + ('0' + today.getSeconds()).slice(-2));
 }
 setInterval(showtime, 1000);
+
+// スクロールフェードイン
+function scrollFadeAnime() {
+  $('.fadeUpTrigger').each(function () {
+    var elementPos = $(this).offset().top - 50;
+    var top = $(window).scrollTop();
+    var windowHeight = $(window).height();
+
+    if (top >= elementPos - windowHeight) {
+      $(this).addClass('fadeUp');
+    }
+    else {
+      $(this).removeClass('fadeUp ');
+    }
+  });
+}
