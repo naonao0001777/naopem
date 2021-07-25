@@ -792,7 +792,7 @@ padding: 1px;
   z-index: 2;
 }
 
-.loaderimg{
+/* .loaderimg{
   width: 100px;
   height: 100px;
   animation: load 2s linear infinite;
@@ -805,7 +805,7 @@ padding: 1px;
   to{
     transform:rotateY(360deg);
   }
-}
+} */
 
 .fadeUp{
   animation-name:fadeUpAnime;
