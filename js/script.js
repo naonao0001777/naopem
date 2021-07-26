@@ -131,7 +131,7 @@ $(function () {
   });
 });
 
-// 5秒たったら強制的にロードをします
+// 6秒たったら強制的にロードをします
 $(function () {
   setTimeout(function () {
     // 本体を表示
@@ -142,7 +142,7 @@ $(function () {
     $(".loader-wrap").fadeOut(600);
     $(".loader").fadeOut(600);
   }
-    , 5000);
+    , 6000);
 });
 
 // 時計
