@@ -232,7 +232,7 @@ display: list-item;
   font-family: "SoukouMincho","Open sans", sans-serif;
   font-size: 150px;
   line-height: 1;
-  letter-spacing: .2em;
+  /* letter-spacing: .1em; */
   text-shadow: 4px 5px 6px #333;
 }
 
