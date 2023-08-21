@@ -230,13 +230,17 @@ li {
 
 .logo-title {
   text-align: center;
-  color: #bc8f8f;
+  color: #F0FFF0;
   font-family: "SoukouMincho", "Open sans", sans-serif;
   font-size: 150px;
   line-height: 1;
   /* letter-spacing: .1em; */
   text-shadow: 4px 5px 6px #333;
   user-select: none;
+}
+
+.title-nao {
+  color: #C2EEFF;
 }
 
 .logo-subtitle {
@@ -249,6 +253,42 @@ li {
   text-shadow: 4px 5px 6px #808080;
   user-select: none;
 }
+
+/* .logo-carsour {
+  -webkit-animation: blink 1.5s ease-in-out infinite alternate;
+  -moz-animation: blink 1.5s ease-in-out infinite alternate;
+  animation: blink 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
 
 .logo-gnav-container {
   display: flex;
