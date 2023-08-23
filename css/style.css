@@ -98,6 +98,7 @@ li {
   margin-bottom: 15px;
   letter-spacing: .05em;
   text-shadow: 1px 2px 3px #808080;
+  user-select: none;
 }
 
 .bold-text {
@@ -132,6 +133,7 @@ li {
 .section-lead {
   margin-bottom: 30px;
   text-align: center;
+  user-select: none;
 }
 
 .text-bold {
@@ -547,6 +549,7 @@ li {
 
 .about-profile-wrapper {
   padding: 10px;
+  user-select: none;
 }
 
 .about-profile {
@@ -651,8 +654,9 @@ width: 10px;
   margin-bottom: 10px;
   width: fit-content;
   height: fit-content;
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
+  user-select: none;
 }
 
 .skill-image-div {
@@ -955,14 +959,17 @@ width: 10px;
   /* 文字 */
   .section-heading {
     margin-bottom: 20px;
+    user-select: none;
   }
 
   .heading-primary {
     font-size: 22px;
+    user-select: none;
   }
 
   .discription-headding {
     font-size: 22px;
+    user-select: none;
   }
 
   /* レイアウト */
