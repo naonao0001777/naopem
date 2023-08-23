@@ -584,6 +584,57 @@ li {
   margin-right: 20px;
   user-select: none;
 }
+.about-project{
+  text-align: left;
+  color: white;
+  display: inline-block;
+  padding: 1px;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  background-color: #003366;
+  border: solid 1px #1d1d1d;
+  padding: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: fit-content;
+  height: fit-content;
+  user-select: none;
+}
+.about-period{
+  text-align: left;
+  color: white;
+  display: inline-block;
+  padding: 1px;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  background-color: #003366;
+  border: solid 1px #1d1d1d;
+  padding: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: fit-content;
+  height: fit-content;
+  user-select: none;
+}
+.about-language{
+  text-align: left;
+  color: white;
+  display: inline-block;
+  padding: 1px;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  background-color: #003366;
+  border: solid 1px #1d1d1d;
+  padding: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: fit-content;
+  height: fit-content;
+  user-select: none;
+}
 
 /*--------------------------------
  Skill
@@ -666,7 +717,7 @@ width: 10px;
   flex-wrap: wrap;
   /* font-weight: bold; */
   border-radius: 5px;
-  background-color: #e6e6e6;
+  background-color: #003366;
   border: solid 1px #1d1d1d;
   padding: 5px;
   box-shadow: 0 0 10px rgb(0 0 0 / 20%);
@@ -678,7 +729,8 @@ width: 10px;
 }
 
 .skill-stack-software {
-  font-weight: bold;
+  /* font-weight: bold; */
+  color: white;
 }
 
 .skill-image-wrapper img {
