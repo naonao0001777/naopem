@@ -518,6 +518,8 @@ li {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  overflow: hidden;
+  transition: 0.3s;
 }
 
 .about-image-layout {
@@ -584,7 +586,8 @@ li {
   margin-right: 20px;
   user-select: none;
 }
-.about-project{
+
+.about-project {
   text-align: left;
   color: white;
   display: inline-block;
@@ -601,7 +604,8 @@ li {
   height: fit-content;
   user-select: none;
 }
-.about-period{
+
+.about-period {
   text-align: left;
   color: white;
   display: inline-block;
@@ -618,7 +622,8 @@ li {
   height: fit-content;
   user-select: none;
 }
-.about-language{
+
+.about-language {
   text-align: left;
   color: white;
   display: inline-block;
@@ -665,17 +670,17 @@ width: 10px;
 
 .skill-item-image {
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
   transform: rotateY(0deg);
 }
 
 .skill-item-image img {
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .skill-item-image :hover {
-  transition: 0.5s;
-  transform: scale(1.3, 1.3);
+  transition: 0.3s;
+  transform: scale(1.2, 1.2);
 }
 
 .skill-image-ul {
