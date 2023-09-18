@@ -385,14 +385,15 @@ li {
 }
 
 .works-url-link {
-  display: inline-block;
+  display:inline-block;
   text-decoration: none;
-  color: #668ad8;
-  width: 50px;
-  height: 50px;
+  color: #ddd;
+  width: 40px;
+  height: 40px;
+  background: #1d1d1d;
   /* line-height: 120px; */
   border-radius: 50%;
-  border: solid 2px #668ad8;
+  border: solid 2px #13c3ac;
   text-align: center;
   overflow: hidden;
   font-weight: bold;
@@ -400,7 +401,7 @@ li {
 }
 
 .works-url-link:hover {
-  background: #b3e1ff;
+  background: #13c3ac;
 }
 
 .works-item:nth-of-type(3n) {
@@ -516,8 +517,8 @@ li {
   border-radius: 50%;
   box-shadow: 0 0 25px 0 #d9d9d9;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
   overflow: hidden;
   transition: 0.3s;
 }
@@ -572,6 +573,8 @@ li {
 .about-name-nao {
   font-size: 1rem;
   font-weight: bold;
+  margin: 5px;
+  padding: 5px;
 }
 
 .about-detail-wrapper {
@@ -1135,7 +1138,7 @@ width: 10px;
   .about-image-layout {
     margin: 30px;
     padding: 20px;
-    width: fit-content;
+    /* width: fit-content; */
   }
 
   .about-body {
