@@ -179,12 +179,25 @@ li {
 }
 
 .parallax-bg {
-  background: url('../img/feature/IMG_20210707_055641.jpg') no-repeat center center;
+  background: url('../img/feature/image.webp'), url('../img/feature/20230618022248_1.jpg'), url('') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
   width: 100%;
   justify-content: center;
+  /* アニメーションを設定 */
+  /* animation: image_anime 2s ease infinite; */
+  /* forwardsを設定すると100%の状態で止まる */
+  /* animation-fill-mode: forwards; */
+  /* animationを開始する時間を設定 */
+  /* animation-delay: 1s; */
+}
+
+@keyframes image_anime {
+  100% {
+    /* 切り替え後の画像 */
+    background-image: url(../img/feature/20230618022248_1.jpg);
+  }
 }
 
 .mask-blackmesh {
@@ -534,7 +547,7 @@ li {
 .about-image-content {
   display: block;
   border: solid 1px #ddd;
-  height: 390px;
+  height: 350px;
   width: 240px;
   padding: 15px;
   border-radius: 5px;
@@ -1142,8 +1155,8 @@ width: 10px;
   }
 
   .about-image-layout {
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     /* width: fit-content;
     height: fit-content; */
   }
@@ -1167,8 +1180,8 @@ width: 10px;
     transform: rotateY(100deg);
   } */
 
-  .about-image-content{
-    height: 700p
+  .about-image-content {
+    height: 380px;
   }
 
   /* Skill */
