@@ -222,7 +222,7 @@ li {
 #datetime {
   display: inline-block;
   position: fixed;
-  top: 12%;
+  top: 18%;
   right: 7%;
   transform:
     rotateY(20deg) rotate(9deg);
