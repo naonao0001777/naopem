@@ -1,0 +1,8 @@
+{
+    "watch": ["server"],
+    "ext": "html",
+    "delay": "3",
+    "execMap": {
+      "html": ""
+    }
+  }

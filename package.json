@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "start": "http-server -o",
+    "restart": "nodemon index.html"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
