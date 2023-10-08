@@ -694,16 +694,16 @@ width: 10px;
 
 .skill-item-image {
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0.2s;
   transform: rotateY(0deg);
 }
 
 .skill-item-image img {
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .skill-item-image :hover {
-  transition: 0.3s;
+  transition: 0.2s;
   transform: scale(1.2, 1.2);
 }
 
