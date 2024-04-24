@@ -716,6 +716,10 @@ width: 10px;
   margin-right: auto;
 }
 
+.skill-image {
+  object-fit: contain;
+}
+
 .skill-description-wrapper {
   display: block;
   margin-right: auto;
