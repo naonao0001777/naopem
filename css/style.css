@@ -179,12 +179,12 @@ li {
 }
 
 .parallax-bg {
-  background: url('../img/feature/image.webp'), url('../img/feature/20230618022248_1.jpg'), url('') no-repeat center center;
+  background: url('../img/feature/image.webp') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  justify-content: center;
+
   /* アニメーションを設定 */
   /* animation: image_anime 2s ease infinite; */
   /* forwardsを設定すると100%の状態で止まる */
