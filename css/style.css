@@ -179,7 +179,7 @@ li {
 }
 
 .parallax-bg {
-  background: url('../img/feature/IMG_20250801_164628.jpg'), url('../img/feature/20230618022248_1.jpg'), url('') no-repeat center center;
+  background: url('../img/feature/image.webp'), url('../img/feature/20230618022248_1.jpg'), url('') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
