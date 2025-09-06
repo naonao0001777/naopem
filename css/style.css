@@ -179,7 +179,7 @@ li {
 }
 
 .parallax-bg {
-  background: url('../img/feature/image.webp'), url('../img/feature/20230618022248_1.jpg'), url('') no-repeat center center;
+  background: url('../img/feature/tokyo.jpg'), url('../img/feature/20230618022248_1.jpg'), url('') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
@@ -191,6 +191,19 @@ li {
   /* animation-fill-mode: forwards; */
   /* animationを開始する時間を設定 */
   /* animation-delay: 1s; */
+}
+
+/* 時間帯別の背景画像 */
+.parallax-bg.morning {
+  background: url('../img/feature/inaka.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.parallax-bg.night {
+  background: url('../img/feature/tokyo.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 @keyframes image_anime {
@@ -455,7 +468,7 @@ li {
 
 .works-image {
   /* object-fit: cover; */
-  max-height: 400px;
+  max-height: 300px;
   border-radius: 15px;
 }
 
@@ -538,8 +551,8 @@ li {
   margin-bottom: auto;
   overflow: hidden;
   transition: 0.3s;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 
 .about-image-layout {
@@ -598,7 +611,7 @@ li {
 
 .about-detail-wrapper {
   display: block;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .about-detail-layout {
@@ -1168,8 +1181,8 @@ width: 10px;
   }
 
   .about-image {
-    height: auto;
-    width: auto;
+    height: 80px;
+    width: 80px;
   }
 
   .about-body {
