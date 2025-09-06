@@ -2,6 +2,31 @@
 // initPhotoSwipeFromDOM(".js-my-gallery");
 
 $(function () {
+  // 時間帯に応じて背景画像を変更
+  function setBackgroundByTime() {
+    const now = new Date();
+    const hour = now.getHours();
+    const parallaxBg = document.querySelector('.parallax-bg');
+    
+    // 既存のクラスを削除
+    parallaxBg.classList.remove('morning', 'night');
+    
+    // 時間帯に応じてクラスを追加
+    if (hour >= 5 && hour < 12) {
+      // 朝 (5:00-11:59)
+      parallaxBg.classList.add('morning');
+    } else {
+      // 夜 (12:00-4:59)
+      parallaxBg.classList.add('night');
+    }
+  }
+  
+  // ページ読み込み時に背景を設定
+  setBackgroundByTime();
+  
+  // 1時間ごとに背景をチェック（オプション）
+  setInterval(setBackgroundByTime, 3600000); // 60 * 60 * 1000 = 1時間
+
   // 画面を読み込む際はローディングを出す
   $(".loader-wrap").css("display", "block");
   $(".loader").css("display", "block");
