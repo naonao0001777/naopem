@@ -206,13 +206,6 @@ li {
   background-size: cover;
 }
 
-@keyframes image_anime {
-  100% {
-    /* 切り替え後の画像 */
-    background-image: url(../img/feature/20230618022248_1.jpg);
-  }
-}
-
 .mask-blackmesh {
   width: 100%;
   height: 100%;
