@@ -12,11 +12,11 @@ $(function () {
     parallaxBg.classList.remove('morning', 'night');
     
     // 時間帯に応じてクラスを追加
-    if (hour >= 5 && hour < 12) {
-      // 朝 (5:00-11:59)
+    if (hour >= 5 && hour < 14) {
+      // 朝 (5:00-13:59)
       parallaxBg.classList.add('morning');
     } else {
-      // 夜 (12:00-4:59)
+      // 夜 (14:00-4:59)
       parallaxBg.classList.add('night');
     }
   }
